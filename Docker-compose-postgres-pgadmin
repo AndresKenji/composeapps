@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: kenji
+      POSTGRES_PASSWORD: 880106Postgres
+    volumes:
+      - F:\Develop\dbs\postgres:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: andres.kenji@outlook.com
+      PGADMIN_DEFAULT_PASSWORD: 880106Luanda
+    volumes:
+      - F:\Develop\dbs\pgadmin:/var/lib/pgadmin
