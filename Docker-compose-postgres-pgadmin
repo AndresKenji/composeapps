@@ -6,8 +6,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: kenji
-      POSTGRES_PASSWORD: 880106Postgres
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: dbpass
     volumes:
       - your:\device\url:/var/lib/postgresql/data
   pgadmin:
