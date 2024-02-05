@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: kenji
       POSTGRES_PASSWORD: 880106Postgres
     volumes:
-      - F:\Develop\dbs\postgres:/var/lib/postgresql/data
+      - your:\device\url:/var/lib/postgresql/data
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin4_container
@@ -17,7 +17,7 @@ services:
     ports:
       - "8888:80"
     environment:
-      PGADMIN_DEFAULT_EMAIL: andres.kenji@outlook.com
-      PGADMIN_DEFAULT_PASSWORD: 880106Luanda
+      PGADMIN_DEFAULT_EMAIL: yourmail
+      PGADMIN_DEFAULT_PASSWORD: yourpass
     volumes:
-      - F:\Develop\dbs\pgadmin:/var/lib/pgadmin
+      - your:\device\url:/var/lib/pgadmin
